@@ -9,7 +9,7 @@ export const Container = styled.div`
     dispaly:flex;
     justify-content: space-between;
     margin-bottom:25px;
-    
+
 `;
 
 export const Title = styled.div<IContainerProps>`
@@ -27,4 +27,6 @@ export const Title = styled.div<IContainerProps>`
 export const Controllers = styled.div`
     float:right;
     display:flex;
+    position: relative;
+    bottom:45px;
 `;
