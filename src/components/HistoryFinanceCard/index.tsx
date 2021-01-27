@@ -1,5 +1,4 @@
 import React from 'react';
-import { Interface } from 'readline';
 
 import {Container, Tag} from './styles';
 
