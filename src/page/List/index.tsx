@@ -35,7 +35,7 @@ const List: React.FC<IRouteParams> = ({match}) => {
   const [selectedFrequency, setSelectedFrequency] = useState(['recorrente','eventual'])
   const [data, setData] = useState<IData[]>([])
   const [monthSelected, setMonthSelected] = useState<number>(new Date().getMonth() +1 )
-  const [yearSelected, setYearSelected] = useState<number>(new Date().getFullYear())
+  const [yearSelected, setYearSelected] = useState<number>(new Date().getFullYear()-1)
 
   const {type} = match.params;
 
@@ -43,12 +43,12 @@ const List: React.FC<IRouteParams> = ({match}) => {
     return type === 'entry-balance'?
        {
         title:'Entradas',
-        lineColor: '#F7931B',
+        lineColor: '#4E41F0',
         data: gains
       }
     :
       {
-          title:'Sa[ida',
+          title:'Saida',
           lineColor: '#E44C4E',
           data: expenses
       }
