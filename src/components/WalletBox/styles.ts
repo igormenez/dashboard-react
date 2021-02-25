@@ -1,9 +1,9 @@
-import styled,{keyframes} from 'styled-components';
+import styled, {keyframes} from 'styled-components';
 
 interface IContainerProps {
     color: string;
-
 }
+
 const animate = keyframes`
     0%{
         transform: translateX(100px);
@@ -18,12 +18,12 @@ const animate = keyframes`
     }
 `;
 
-export const Container  = styled.div<IContainerProps>`
+export const Container = styled.div<IContainerProps>`
     width: 32%;
     height: 150px;
 
     margin: 10px 0;
-
+    
     background-color: ${props => props.color};
     color: ${props => props.theme.colors.white};
 
